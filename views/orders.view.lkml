@@ -50,6 +50,11 @@ view: orders {
     drill_fields: [detail*]
   }
 
+  dimension: date_formatted {
+    sql: ${created_date} ;;
+    html: {{ value | append: '-01' | date: "%b %d, %y" }} ;;
+  }
+
   # ----- Sets of fields for drilling ------
   set: detail {
     fields: [

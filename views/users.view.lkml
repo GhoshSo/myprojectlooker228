@@ -43,7 +43,7 @@ view: users {
 
   dimension: country {
     type: string
-    map_layer_name: uk_postcode_areas
+    map_layer_name: countries
     sql: ${TABLE}.country ;;
   }
 
@@ -86,6 +86,7 @@ view: users {
 
   dimension: state {
     type: string
+  #map_layer_name: us_states
     sql: ${TABLE}.state ;;
   }
 
